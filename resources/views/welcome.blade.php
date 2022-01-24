@@ -15,5 +15,6 @@
         <x-product-grid :max="15"></x-product-grid>
 
         <livewire:scripts />
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
