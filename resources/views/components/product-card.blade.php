@@ -19,14 +19,17 @@
               "> Product #{{ $id }} </h1>
     <p class="mx-auto text-base leading-relaxed text-gray-500"> Free and Premium themes, UI Kit's, templates and landing pages built with Tailwind CSS, HTML &amp; Next.js. </p>
     <div class="mt-4">
-        <a href="#" class="
-                  inline-flex
-                  items-center
-                  mt-4
-                  font-semibold
-                  text-blue-600
-                  lg:mb-0
-                  hover:text-neutral-600
-                " title="read more"> Read More » </a>
+        <button
+            class="
+              inline-flex
+              items-center
+              mt-4
+              font-semibold
+              text-blue-600
+              lg:mb-0
+              hover:text-neutral-600
+            "
+            onclick="Livewire.emit('openModal', 'add-to-cart', {{ json_encode(["product" => $id]) }})"
+            title="read more"> Add product {{ $id }} to cart » </button>
     </div>
 </div>
