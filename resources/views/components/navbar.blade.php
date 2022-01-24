@@ -73,6 +73,9 @@
                 "> Free <span class="hidden lg:inline">Templates </span>
                     </a>
                 </li>
+                <li>
+                    <livewire:cart-button />
+                </li>
             </ul>
         </nav>
     </div>
